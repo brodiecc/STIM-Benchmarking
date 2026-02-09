@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stim-env"
+version = "0.1.0"
+description = "Utilities for generating Stim surface-code circuits and syndromes."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "stim>=1.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["stim_env"]
